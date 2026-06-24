@@ -26,7 +26,7 @@ def add_note(text, label):
         {
             "text": text,
             "label": label,
-            "created": datetime.datetime.now(datetime.UTC).isoformat(),
+            "created": datetime.datetime.now(datetime.timezone.utc).isoformat(),
         }
     )
     save_notes(notes)
