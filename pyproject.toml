@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "notes-cli-app"
+version = "0.1.0"
+description = "A simple CLI app to manage notes with labels"
+requires-python = ">=3.10"
+
+[project.scripts]
+notes-cli = "notes_cli:main"
